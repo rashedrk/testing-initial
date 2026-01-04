@@ -1,0 +1,24 @@
+{
+  "name": "testing-initial",
+  "version": "1.0.0",
+  "description": "A simple project to practice testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashedrk/testing-initial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rashedrk/testing-initial/issues"
+  },
+  "homepage": "https://github.com/rashedrk/testing-initial#readme",
+  "devDependencies": {
+    "vitest": "^4.0.16"
+  }
+}
