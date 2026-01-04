@@ -4,7 +4,7 @@
   "description": "A simple project to practice testing",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest --reporter verbose --run"
   },
   "repository": {
     "type": "git",
