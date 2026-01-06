@@ -6,4 +6,5 @@ it('should return number if a numeric string is provided', () => {
     const result = transformToNumber(stringNumber);
 
     expect(result).toBeTypeOf('number');
+    expect(isNaN(result)).not.toBeTypeOf(true);
 });
