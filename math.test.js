@@ -45,3 +45,13 @@ it('should throw an error if no argument is passed', () => {
     expect(resultFn).toThrow();
 });
 
+it('should throw an error if multiple arguments are passed', () => {
+    const resultFn = () => {
+        add(1,2,3);
+    }
+
+    // expect(resultFn).toThrow();
+
+    //we can customize by using regex.
+    expect(resultFn).toThrow(/is not iterable/i)
+})
