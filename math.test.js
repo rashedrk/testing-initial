@@ -3,8 +3,8 @@ import { add } from './math'
 
 it('should return the correct sum if an array of numbers are provided', () => {
     // Arrange 
-    const numbers = [1,2,3];
-    const expectedResult = numbers.reduce((a,b) => a + b, 0);
+    const numbers = [1, 2, 3];
+    const expectedResult = numbers.reduce((a, b) => a + b, 0);
 
     // Actions
     const result = add(numbers)
@@ -14,7 +14,7 @@ it('should return the correct sum if an array of numbers are provided', () => {
 });
 it('should return NaN if any element of array is invalid', () => {
     // Arrange 
-    const numbers = [1,"s",3];
+    const numbers = [1, "s", 3];
 
     // Actions
     const result = add(numbers)
@@ -24,8 +24,8 @@ it('should return NaN if any element of array is invalid', () => {
 });
 it('should return the correct sum if an array of numeric strings are provided', () => {
     // Arrange 
-    const numbers = ['1','2','3'];
-    const expectedResult = numbers.reduce((a,b) => +a + +b, 0);
+    const numbers = ['1', '2', '3'];
+    const expectedResult = numbers.reduce((a, b) => +a + +b, 0);
 
     // Actions
     const result = add(numbers)
@@ -33,3 +33,15 @@ it('should return the correct sum if an array of numeric strings are provided', 
     // Assertion
     expect(result).toBe(expectedResult)
 });
+
+
+//Testing Error
+
+it('should throw an error if no argument is passed', () => {
+    const resultFn = () => {
+        add();
+    }
+
+    expect(resultFn).toThrow();
+});
+
