@@ -1,5 +1,5 @@
 export function validateEmail(email) {
-    const emailRegex = /\s+@\s+\.\s+/;
+    const emailRegex = /\S+@\S+\.\S+/;
     if (!emailRegex.test(email)) {
         throw new Error("Invalid email format.");
     }
